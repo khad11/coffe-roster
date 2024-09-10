@@ -1,0 +1,157 @@
+@import "./base/typography";
+@import "./abstracts/mixin";
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./pages/about";
+@import "./vendors/normalize";
+@import "./base/base";
+
+.hero {
+  background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 11.7rem 0 11.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.hero__info {
+  max-width: 49.3rem;
+  width: 100%;
+}
+.hero__info__title {
+  font-size: $h1-fs;
+  line-height: $h1-ln;
+  color: $light-cream;
+}
+.hero__info__words {
+  font-size: $p-fs;
+  line-height: $p-ln;
+  color: $light-cream;
+  font-weight: 400;
+  opacity: 80%;
+  padding: 3.2rem 0 5.6rem 0;
+  letter-spacing: 1px;
+}
+.btn-status {
+  padding-left: 3.1rem;
+  padding-right: 3.1rem;
+}
+@media (max-width: 700px) {
+  .hero {
+    background-image: url(../images/home/tablet/image-hero-coffeepress.jpg);
+  }
+  .hero__info__title {
+    font-size: 4.8rem;
+    line-height: $h2-ln;
+  }
+  .hero__info {
+    max-width: 39.8rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hero {
+    text-align: center;
+    background-image: url(../images/home/mobile/image-hero-coffeepress.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .hero__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+// about uchun
+.about {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.about__info,
+.plan__info {
+  max-width: 44.5rem;
+  width: 100%;
+}
+.about__info__title,
+.plan__info__title {
+  font-size: $h2-fs;
+  line-height: $h2-ln;
+  color: $light-cream;
+  text-transform: capitalize;
+}
+.about__info__words,
+.plan__info__words {
+  font-size: $p-fs;
+  line-height: $p-ln;
+  color: $light-cream;
+  font-weight: 400;
+  opacity: 80%;
+
+  letter-spacing: 1px;
+}
+.about__info__words {
+  padding-top: 2.4rem;
+}
+.plan__info__words {
+  padding-top: 3.2rem;
+}
+.plan {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.4rem 0 13.4rem 8.5rem;
+  border-radius: 15px;
+}
+@media (max-width: 700px) {
+  .about {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+  }
+  .about__info__title {
+    font-size: 4.8rem;
+    line-height: $h2-ln;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    text-align: center;
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .about__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+@media (max-width: 700px) {
+  .plan {
+    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+  }
+  .plan__info__title {
+    font-size: 4.8rem;
+    line-height: $h2-ln;
+  }
+}
+@media screen and (max-width: 520px) {
+  .plan {
+    text-align: center;
+    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .plan__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.3rem 0;
+}
+.sitenav__menu {
+  display: flex;
+  gap: 3.3rem;
+}
+.sitenav__item {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.sitenav__link {
+  color: $grey;
+  &:hover {
+    color: $dark-grey;
+  }
+}
+.sitenav__hamburger {
+  display: none;
+}
+@media screen and (max-width: 670px) {
+  .sitenav {
+    display: none;
+  }
+  .sitenav__hamburger {
+    display: block;
+  }
+}

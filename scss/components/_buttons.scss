@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: $dark-cyan;
+  color: $light-cream;
+  font-family: "Fraunces";
+  font-weight: 900;
+  transition: 0.3s;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: #66d2cf;
+  }
+}

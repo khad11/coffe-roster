@@ -1,1 +1,357 @@
-/*# sourceMappingURL=main.css.map */
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fraunces-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.btn {
+  display: inline-block;
+  border: none;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: #0e8784;
+  color: #fefcf7;
+  font-family: "Fraunces";
+  font-weight: 900;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.btn:hover {
+  background-color: #66d2cf;
+}
+
+.footer {
+  background-color: #2c343e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.7rem 8.5rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 33px;
+}
+
+.footer-nav__item {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.footer-nav__item__link {
+  color: #83888f;
+}
+.footer-nav__item__link:hover {
+  color: #fefcf7;
+}
+
+.footer__social-link {
+  display: flex;
+  gap: 2.4rem;
+}
+
+@media screen and (max-width: 780px) {
+  .footer {
+    flex-direction: column;
+    gap: 3.2rem;
+    padding-top: 5.4rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.3rem 0;
+}
+
+.sitenav__menu {
+  display: flex;
+  gap: 3.3rem;
+}
+
+.sitenav__item {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.sitenav__link {
+  color: #83888f;
+}
+.sitenav__link:hover {
+  color: #333d4b;
+}
+
+.sitenav__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .sitenav {
+    display: none;
+  }
+  .sitenav__hamburger {
+    display: block;
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow";
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces";
+  font-weight: 900;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.hero {
+  background-image: url(../images/home/desktop/image-hero-coffeepress.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 11.7rem 0 11.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.hero__info {
+  max-width: 49.3rem;
+  width: 100%;
+}
+
+.hero__info__title {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  color: #fefcf7;
+}
+
+.hero__info__words {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fefcf7;
+  font-weight: 400;
+  opacity: 80%;
+  padding: 3.2rem 0 5.6rem 0;
+  letter-spacing: 1px;
+}
+
+.btn-status {
+  padding-left: 3.1rem;
+  padding-right: 3.1rem;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-image: url(../images/home/tablet/image-hero-coffeepress.jpg);
+  }
+  .hero__info__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+  .hero__info {
+    max-width: 39.8rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hero {
+    text-align: center;
+    background-image: url(../images/home/mobile/image-hero-coffeepress.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .hero__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+.about {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.about__info,
+.plan__info {
+  max-width: 44.5rem;
+  width: 100%;
+}
+
+.about__info__title,
+.plan__info__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #fefcf7;
+  text-transform: capitalize;
+}
+
+.about__info__words,
+.plan__info__words {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fefcf7;
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 1px;
+}
+
+.about__info__words {
+  padding-top: 2.4rem;
+}
+
+.plan__info__words {
+  padding-top: 3.2rem;
+}
+
+.plan {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.4rem 0 13.4rem 8.5rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  .about {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+  }
+  .about__info__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    text-align: center;
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .about__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+@media (max-width: 700px) {
+  .plan {
+    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+  }
+  .plan__info__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .plan {
+    text-align: center;
+    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .plan__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}/*# sourceMappingURL=main.css.map */
