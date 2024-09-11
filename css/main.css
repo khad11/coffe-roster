@@ -136,6 +136,226 @@
     display: block;
   }
 }
+.about {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.about__info {
+  max-width: 44.5rem;
+  width: 100%;
+}
+
+.about__info__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #fefcf7;
+  text-transform: capitalize;
+}
+
+.about__info__words {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fefcf7;
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 1px;
+}
+
+.about__info__words {
+  padding-top: 2.4rem;
+}
+
+@media (max-width: 700px) {
+  .about {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+  }
+  .about__info__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    text-align: center;
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .about__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+.commit-our {
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-top: 16.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 12.5rem;
+  align-items: center;
+  margin-bottom: 26rem;
+}
+
+.commit-our__image img {
+  border-radius: 8px;
+}
+
+.commit-our__info {
+  max-width: 54rem;
+  width: 100%;
+}
+
+.commit-our__info__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #333d4b;
+}
+
+.commit-our__info__word {
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #333d4b;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 970px) {
+  .commit-our {
+    gap: 6.9rem;
+  }
+  .commit-our__image img {
+    width: 281px;
+    height: 470px;
+  }
+  .commit-our__info {
+    max-width: 33.9rem;
+  }
+  .commit-our__info__title {
+    font-size: 3.2rem;
+  }
+  .commit-our__info__word {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .commit-our {
+    flex-direction: column;
+    text-align: center;
+  }
+  .commit-our__image img {
+    display: block;
+    width: 320px;
+    height: 400px;
+  }
+}
+.quality {
+  color: #fefcf7;
+}
+
+.quality-main {
+  background-image: url(./../../images/about/desktop/bg-quality.png);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-size: cover;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.quality-main__info {
+  padding-top: 8.8rem;
+  padding-left: 8.5rem;
+  max-width: 60rem;
+  width: 100%;
+}
+
+.quality-main__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.quality-main__word {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  opacity: 80%;
+}
+
+.quality-main__image {
+  margin-top: -8.8rem;
+  padding-right: 8.5rem;
+  padding-bottom: 8.8rem;
+}
+.quality-main__image img {
+  border-radius: 8px;
+}
+
+.quality-main__tablet-img {
+  display: none;
+}
+
+.quality-main__mobile-img {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .quality-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .quality-main__image {
+    display: none;
+  }
+  .quality-main__tablet-img {
+    margin-top: -16rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: block;
+  }
+  .quality-main__tablet-img img {
+    border-radius: 8px;
+  }
+  .quality-main__info {
+    padding: 6.4rem 2.4rem;
+  }
+  .quality-main__mobile-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .quality-main__tablet-img {
+    display: none;
+  }
+  .quality-main__mobile-img {
+    display: block;
+    margin-top: -7.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .quality-main__mobile-img img {
+    border-radius: 8px;
+  }
+  .quality-main__info {
+    padding: 6.4rem 2.4rem;
+  }
+  .quality-main__title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .quality-main__word {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
 *,
 *::after,
 *::before {
@@ -193,7 +413,7 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5rem;
@@ -237,6 +457,7 @@ h6 {
 @media (max-width: 700px) {
   .hero {
     background-image: url(../images/home/tablet/image-hero-coffeepress.jpg);
+    padding: 10.4rem 5.8rem;
   }
   .hero__info__title {
     font-size: 4.8rem;
@@ -257,99 +478,8 @@ h6 {
     font-size: 4rem;
     line-height: 4rem;
   }
-  .btn-status {
-    align-self: self-start;
-  }
-}
-.about {
-  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 13.7rem 0 13.7rem 8.5rem;
-  border-radius: 15px;
-}
-
-.about__info,
-.plan__info {
-  max-width: 44.5rem;
-  width: 100%;
-}
-
-.about__info__title,
-.plan__info__title {
-  font-size: 4rem;
-  line-height: 4.8rem;
-  color: #fefcf7;
-  text-transform: capitalize;
-}
-
-.about__info__words,
-.plan__info__words {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  color: #fefcf7;
-  font-weight: 400;
-  opacity: 80%;
-  letter-spacing: 1px;
-}
-
-.about__info__words {
-  padding-top: 2.4rem;
-}
-
-.plan__info__words {
-  padding-top: 3.2rem;
-}
-
-.plan {
-  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 13.4rem 0 13.4rem 8.5rem;
-  border-radius: 15px;
-}
-
-@media (max-width: 700px) {
-  .about {
-    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
-  }
-  .about__info__title {
-    font-size: 4.8rem;
-    line-height: 4.8rem;
-  }
-}
-@media screen and (max-width: 520px) {
-  .about {
-    text-align: center;
-    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
-    padding: 10rem 2.4rem;
-  }
-  .about__info__title {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-  .btn-status {
-    align-self: self-start;
-  }
-}
-@media (max-width: 700px) {
-  .plan {
-    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
-  }
-  .plan__info__title {
-    font-size: 4.8rem;
-    line-height: 4.8rem;
-  }
-}
-@media screen and (max-width: 520px) {
-  .plan {
-    text-align: center;
-    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
-    padding: 10rem 2.4rem;
-  }
-  .plan__info__title {
-    font-size: 4rem;
-    line-height: 4rem;
+  .hero__info__words {
+    padding: 2.4rem 0 3.9rem 0;
   }
   .btn-status {
     align-self: self-start;
@@ -420,53 +550,6 @@ h6 {
     background-size: 550px;
   }
 }
-.why {
-  background-color: #2c343e;
-  height: 577px;
-  border-radius: 20px;
-  padding: 0 85px 0 85px;
-  border-radius: 7px;
-}
-
-.why__info {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 540px;
-  padding: 100px 0 86px 0;
-}
-
-.why__info__title {
-  font-size: 4rem;
-  line-height: 4.8rem;
-  color: #fefcf7;
-}
-
-.why__info__word {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  color: #fefcf7;
-  font-weight: 400;
-  opacity: 80%;
-  padding-top: 3.2rem;
-}
-
-.why__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.why__box__item {
-  background-color: #0e8784;
-  max-height: 382px;
-  align-items: center;
-  padding: 72px 48px 48px 47px;
-  text-align: center;
-  border-radius: 10px;
-}
-
 .why__box__item__logo {
   margin: 0 auto;
 }
@@ -493,35 +576,9 @@ h6 {
   opacity: 80%;
 }
 
-@media screen and (max-width: 1140px) {
-  .why__box {
-    flex-direction: column;
-    row-gap: 2.4rem;
-  }
-  .why__box__item {
-    display: flex;
-    justify-content: space-between;
-    max-width: 57.3rem;
-    padding: 4.1rem 4.8rem;
-    width: 100%;
-    gap: 5rem;
-  }
-  .box__item__info {
-    text-align: left;
-    max-width: 340px;
-    width: 100%;
-  }
-  .why__box__item__logo {
-    width: 72px;
-    height: 70px;
-    margin: 0;
-  }
-  .why {
-    margin-bottom: 70rem;
-  }
-}
 .steps {
-  width: 760px;
+  max-width: 1045px;
+  width: 69%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -538,7 +595,7 @@ h6 {
 }
 
 .works {
-  margin-top: 40rem;
+  padding-top: 40rem;
   padding-right: 20rem;
   padding-bottom: 20rem;
 }
@@ -550,9 +607,10 @@ h6 {
   color: #83888f;
 }
 
-.works__box {
+.works__box__list {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .works__box__item {
@@ -585,4 +643,90 @@ h6 {
   font-weight: 400;
   opacity: 80%;
   padding-bottom: 6.4rem;
+}
+
+@media screen and (max-width: 750px) {
+  .steps {
+    display: none;
+  }
+  .works__box__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .works {
+    padding: 12rem 2.4rem;
+    text-align: center;
+  }
+  .works__box__item__title {
+    max-width: 100%;
+  }
+  .works__box__item {
+    padding-top: 0;
+    max-width: 32.7rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .works__box__item__title {
+    font-size: 2.8rem;
+  }
+  .works__box__item__word {
+    font-size: 1.5rem;
+  }
+}
+.plan__info {
+  max-width: 44.5rem;
+  width: 100%;
+}
+
+.plan__info__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #fefcf7;
+  text-transform: capitalize;
+}
+
+.plan__info__words {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #fefcf7;
+  font-weight: 400;
+  opacity: 80%;
+  letter-spacing: 1px;
+}
+
+.plan__info__words {
+  padding-top: 3.2rem;
+}
+
+.plan {
+  background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.4rem 0 13.4rem 8.5rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  .plan {
+    background-image: url(../images/plan/tablet/image-hero-blackcup.jpg);
+  }
+  .plan__info__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .plan {
+    text-align: center;
+    background-image: url(../images/plan/mobile/image-hero-blackcup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .plan__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
 }/*# sourceMappingURL=main.css.map */

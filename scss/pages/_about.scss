@@ -1,0 +1,214 @@
+// about uchun
+.about {
+  background-image: url(../images/about/desktop/image-hero-whitecup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 13.7rem 0 13.7rem 8.5rem;
+  border-radius: 15px;
+}
+
+.about__info {
+  max-width: 44.5rem;
+  width: 100%;
+}
+.about__info__title {
+  font-size: $h2-fs;
+  line-height: $h2-ln;
+  color: $light-cream;
+  text-transform: capitalize;
+}
+.about__info__words {
+  font-size: $p-fs;
+  line-height: $p-ln;
+  color: $light-cream;
+  font-weight: 400;
+  opacity: 80%;
+
+  letter-spacing: 1px;
+}
+.about__info__words {
+  padding-top: 2.4rem;
+}
+
+@media (max-width: 700px) {
+  .about {
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+  }
+  .about__info__title {
+    font-size: 4.8rem;
+    line-height: $h2-ln;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about {
+    text-align: center;
+    background-image: url(../images/about/tablet/image-hero-whitecup.jpg);
+    padding: 10rem 2.4rem;
+  }
+  .about__info__title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .btn-status {
+    align-self: self-start;
+  }
+}
+// section- OUR-commitment
+.commit {
+}
+.commit-our {
+  margin-left: 8.5rem;
+  margin-right: 8.5rem;
+  margin-top: 16.5rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 12.5rem;
+  align-items: center;
+  margin-bottom: 26rem;
+}
+.commit-our__image img {
+  border-radius: 8px;
+}
+.commit-our__info {
+  max-width: 54rem;
+  width: 100%;
+}
+.commit-our__info__title {
+  font-size: $h2-fs;
+  line-height: 4.8rem;
+  color: $dark-grey;
+}
+.commit-our__info__word {
+  margin-top: 3.2rem;
+  font-size: $p-fs;
+  line-height: $p-ln;
+  color: $dark-grey;
+  opacity: 80%;
+}
+@media screen and (max-width: 970px) {
+  .commit-our {
+    // margin: 14rem 3.9rem;
+    gap: 6.9rem;
+  }
+  .commit-our__image img {
+    width: 281px;
+    height: 470px;
+  }
+  .commit-our__info {
+    max-width: 33.9rem;
+  }
+  .commit-our__info__title {
+    font-size: 3.2rem;
+  }
+  .commit-our__info__word {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .commit-our {
+    flex-direction: column;
+    text-align: center;
+  }
+  .commit-our__image img {
+    display: block;
+    width: 320px;
+    height: 400px;
+  }
+}
+// quality section
+.quality {
+  color: $light-cream;
+}
+.quality-main {
+  background-image: url(./../../images/about/desktop/bg-quality.png);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-size: cover;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  //   padding: 8.8rem 8.5rem;
+}
+
+.quality-main__info {
+  padding-top: 8.8rem;
+  padding-left: 8.5rem;
+  max-width: 60rem;
+  width: 100%;
+}
+.quality-main__title {
+  font-size: $h2-fs;
+  line-height: $h2-ln;
+  margin-bottom: 3.2rem;
+}
+.quality-main__word {
+  font-size: $p-fs;
+  line-height: $p-ln;
+  opacity: 80%;
+}
+.quality-main__image {
+  margin-top: -8.8rem;
+  padding-right: 8.5rem;
+  padding-bottom: 8.8rem;
+  img {
+    border-radius: 8px;
+  }
+}
+.quality-main__tablet-img {
+  display: none;
+}
+.quality-main__mobile-img {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  .quality-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .quality-main__image {
+    display: none;
+  }
+  .quality-main__tablet-img {
+    margin-top: -16rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    display: block;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .quality-main__info {
+    padding: 6.4rem 2.4rem;
+  }
+  .quality-main__mobile-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .quality-main__tablet-img {
+    display: none;
+  }
+  .quality-main__mobile-img {
+    display: block;
+    margin-top: -7.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    img {
+      border-radius: 8px;
+    }
+  }
+  .quality-main__info {
+    padding: 6.4rem 2.4rem;
+  }
+  .quality-main__title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+  .quality-main__word {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
