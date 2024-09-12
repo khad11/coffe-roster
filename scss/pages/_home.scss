@@ -127,8 +127,55 @@
 }
 // why-choose us section
 
-.why__box__item__logo {
-  margin: 0 auto;
+.why {
+  color: $light-cream;
+  background-image: url(../../images/plan/desktop/bg-steps.png);
+  background-size: cover;
+  background-position: center;
+  background-color: $dark-grey;
+  border-radius: 10px;
+  padding: 10rem 8.5rem 0 8.5rem;
+  // text-align: center;
+}
+.why__info {
+  max-width: 54rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.why__info__title {
+  font-size: $h2-fs;
+  line-height: $h2-ln;
+  margin-bottom: 3.2rem;
+}
+.why__info__word {
+  font-size: $p-fs;
+  line-height: $p-ln;
+  margin-bottom: 8.6rem;
+  opacity: 80%;
+}
+.why__box {
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  row-gap: 180px;
+}
+.why__box__item {
+  background-color: $dark-cyan;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.2rem 4.8rem;
+  margin-bottom: -15rem;
+}
+
+.why__box__item__logo_fix {
+  object-fit: contain;
 }
 .box__item__info {
   max-width: 25.5rem;
@@ -138,19 +185,46 @@
 .box__item__info__title {
   font-size: $h4-fs;
   line-height: $h4-ln;
-  color: $light-cream;
+
   padding-top: 5.6rem;
   padding-bottom: 2.4rem;
 }
 .box__item__info__word {
   font-size: $p-fs;
   line-height: $p-ln;
-  color: $light-cream;
   font-weight: 400;
   opacity: 80%;
 }
 // section-why-responsive
-
+@media screen and (max-width: 910px) {
+  .why__box__item {
+    max-width: 60.9rem;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .box__item__info {
+    max-width: 40rem;
+    justify-content: center;
+  }
+  .box__item__info__title {
+    text-align: left;
+  }
+  .box__item__info__word {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 550px) {
+  .why__box__item {
+    flex-direction: column;
+    gap: 0;
+  }
+  .box__item__info__title {
+    text-align: center;
+  }
+  .box__item__info__word {
+    text-align: center;
+  }
+}
 // section-how-it-works
 .steps {
   max-width: 1045px;
@@ -227,7 +301,7 @@
     align-items: center;
   }
   .works {
-    padding: 12rem 2.4rem;
+    padding: 25rem 2.4rem;
     text-align: center;
   }
   .works__box__item__title {
