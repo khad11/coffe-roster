@@ -29,6 +29,9 @@
   display: flex;
   gap: 2.4rem;
 }
+.social-link__link path:hover {
+  fill: $pale-orange;
+}
 @media screen and (max-width: 780px) {
   .footer {
     flex-direction: column;

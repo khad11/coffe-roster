@@ -83,6 +83,10 @@
   gap: 2.4rem;
 }
 
+.social-link__link path:hover {
+  fill: #fdd6ba;
+}
+
 @media screen and (max-width: 780px) {
   .footer {
     flex-direction: column;
@@ -847,6 +851,7 @@ h6 {
 }
 
 .plan {
+  margin-bottom: 16.8rem;
   background-image: url(../images/plan/desktop/image-hero-blackcup.jpg);
   background-position: center;
   background-size: cover;
@@ -875,5 +880,191 @@ h6 {
   }
   .btn-status {
     align-self: self-start;
+  }
+}
+.works_dark {
+  padding-right: 20rem;
+  border-radius: 10px;
+  background-color: #333d4b;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.works__box__item__title_light {
+  color: #fefcf7;
+}
+
+.works__box__item__word_light {
+  color: #fefcf7;
+}
+
+@media screen and (max-width: 750px) {
+  .works__box__item__title_light {
+    text-align: center;
+  }
+  .works__box__item__word_light {
+    color: #fefcf7;
+  }
+  .works__head {
+    text-align: center;
+  }
+  .works_dark {
+    padding: 8rem 2.4rem;
+  }
+  .works__box__item {
+    text-align: center;
+  }
+}
+.oorder {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
+.order-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.order-main__table {
+  display: flex;
+  gap: 2.8rem;
+}
+
+.table__number {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.table__number span {
+  border-bottom: 1px solid gray;
+  font-size: 2.4rem;
+  color: #83888f;
+  line-height: 3.2rem;
+  font-family: "Fraunces";
+  font-weight: 900;
+  padding: 1.5rem 2.4rem;
+}
+.table__number span:hover {
+  color: #333d4b;
+}
+
+.table__type__title {
+  border-bottom: 1px solid gray;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: #83888f;
+  padding-bottom: 1.6rem;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.table__type__title:hover {
+  color: #333d4b;
+}
+
+.choose__category__title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #83888f;
+  padding-bottom: 5.6rem;
+}
+
+.choose__category__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.3rem;
+  align-items: center;
+  color: #333d4b;
+  padding-bottom: 8.8rem;
+}
+
+.choose__category__box__item {
+  cursor: pointer;
+  max-height: 29rem;
+  border-radius: 8px;
+  max-width: 22.8rem;
+  width: 100%;
+  background-color: #f4f1eb;
+  padding-left: 2.8rem;
+  transition: 0.3s;
+}
+.choose__category__box__item:hover {
+  background-color: #0e8784;
+  color: #fefcf7;
+}
+
+.category-item__title {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  padding: 3.2rem 0 2.4rem 0;
+}
+.category-item__title:hover {
+  color: #fefcf7;
+}
+
+.category-item__word {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  padding-right: 2.8rem;
+  opacity: 80%;
+  padding-bottom: 8.4rem;
+}
+.category-item__word:hover {
+  color: #fefcf7;
+}
+
+.choose__info {
+  padding: 2.7rem 6.4rem;
+  border-radius: 8px;
+  max-width: 73rem;
+  width: 100%;
+  background-image: url(../../images/plan/desktop/bg-steps.png);
+  margin-bottom: 4rem;
+}
+
+.choose__info__title {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #83888f;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.choose__info__word {
+  margin-top: 8px;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: #fefcf7;
+  font-family: "Fraunces";
+  font-weight: 900;
+}
+.choose__info__word b {
+  color: #0e8784;
+}
+
+@media screen and (max-width: 900px) {
+  .table {
+    display: none;
+  }
+  .order-main {
+    justify-content: center;
+  }
+  .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .choose__category__box {
+    flex-direction: column;
+  }
+  .choose__category__title {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+  .choose__category__box__item {
+    max-width: 400px;
   }
 }/*# sourceMappingURL=main.css.map */
